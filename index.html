@@ -3,551 +3,780 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZettaRCM | Enterprise Revenue Cycle Management & Medical Billing Solutions</title>
-  <meta name="description" content="ZettaRCM delivers performance-locked revenue cycle orchestration, certified coding compliance, and automated denial recovery platforms optimized for enterprise health systems and nationwide practices.">
-  
+  <title>ZettaRCM | #1 Medical Billing Company in New York</title>
+  <meta name="description" content="ZettaRCM is New York's leading Revenue Cycle Management company. Expert medical billing, credentialing, coding, denial management, and A/R follow-up services for practices nationwide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
   <style type="text/tailwindcss">
     @theme {
-      --color-obsidian: #090D16;
-      --color-panel-dark: #121824;
-      --color-brand-teal: #00F2FE;
-      --color-accent-green: #00E676;
+      --color-brand-navy: #1B3A6B;
+      --color-brand-teal: #00B8D4;
+      --color-light-bg: #F5F8FF;
     }
-    
-    /* Strict global zero-rounded constraint for high-end technical precision */
-    button, input, select, textarea, div, a, section, span, li, ul, header, nav, img {
-      border-radius: 0px !important;
-      font-family: 'Inter', sans-serif;
+    * { font-family: 'Inter', sans-serif; box-sizing: border-box; }
+    button, input, select, textarea { border-radius: 0 !important; }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
-
-    .mega-menu-shadow {
-      box-shadow: 0 30px 60px -15px rgba(3, 5, 10, 0.8);
-    }
+    .ticker-track { display:flex; animation: ticker 32s linear infinite; width:max-content; }
+    .dropdown-parent:hover > .dropdown-menu { display: block; }
+    .mega-parent:hover > .mega-menu { display: flex; }
+    .mega-parent2:hover > .mega-menu2 { display: block; }
+    .dropdown-menu { display: none; }
+    .mega-menu { display: none; }
+    .mega-menu2 { display: none; }
   </style>
 </head>
-<body class="bg-obsidian text-slate-200 antialiased selection:bg-brand-teal selection:text-obsidian">
+<body class="bg-white text-slate-800">
 
-  <!-- TOP ADMINISTRATIVE BAR -->
-  <div class="w-full bg-[#0F1420] border-b border-slate-800/80 text-[12px] text-slate-400 py-3 px-6">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex flex-wrap gap-6 justify-center sm:justify-start tracking-wide">
-        <a href="tel:+18005550192" class="hover:text-brand-teal transition-colors flex items-center gap-1.5">
-          <span>Toll-Free:</span> <span class="text-white font-medium">(800) 555-0192</span>
+  <!-- TOP BAR -->
+  <div class="w-full bg-brand-navy text-[12px] text-slate-300 py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex flex-wrap gap-5 items-center">
+        <a href="tel:+18005160192" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (800) 516-0192
         </a>
-        <a href="mailto:info@zettarcm.com" class="hover:text-brand-teal transition-colors flex items-center gap-1.5">
-          <span>Enterprise Support:</span> <span class="text-white font-medium">info@zettarcm.com</span>
+        <a href="tel:+17183030192" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          (718) 303-0192
         </a>
-        <span class="text-slate-600 hidden md:inline">Headquarters: 350 Fifth Ave, Suite 4800, New York, NY 10118</span>
+        <a href="mailto:info@zettarcm.com" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          info@zettarcm.com
+        </a>
+        <span class="text-slate-500 hidden md:flex items-center gap-1.5">
+          <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          134 N 4th St, Brooklyn, NY 11249
+        </span>
       </div>
-      <div class="flex items-center gap-4 text-xs font-medium tracking-wide">
-        <a href="#intake" class="text-brand-teal hover:text-white transition-colors">Request Comprehensive Practice Audit</a>
-        <span class="text-slate-700">|</span>
-        <div class="flex items-center gap-2">
-          <span class="w-2 h-2 bg-accent-green"></span>
-          <span class="text-slate-400 text-[11px] uppercase tracking-wider font-semibold">HIPAA Secure Connection</span>
-        </div>
+      <div class="flex items-center gap-4">
+        <a href="#quote" class="text-brand-teal hover:text-white transition-colors font-medium">Free Practice Audit</a>
+        <span class="text-slate-600">|</span>
+        <a href="#" class="hover:text-white transition-colors">Make A Payment</a>
+        <span class="text-slate-600">|</span>
+        <span class="flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 bg-green-400 rounded-full inline-block"></span>
+          HIPAA Secure
+        </span>
       </div>
     </div>
   </div>
 
-  <!-- NAVIGATION HEADER -->
-  <header class="w-full border-b border-slate-800 bg-obsidian/95 backdrop-blur-md sticky top-0 z-50 px-6">
-    <div class="max-w-7xl mx-auto h-24 flex items-center justify-between">
-      
-      <a href="/" class="flex flex-col justify-center space-y-0.5 group">
-        <span class="text-2xl font-bold tracking-tight text-white">Zetta<span class="text-brand-teal group-hover:text-white transition-colors">RCM</span></span>
-        <span class="text-[9px] tracking-[0.28em] text-slate-500 uppercase font-semibold">Revenue Cycle Management</span>
+  <!-- MAIN HEADER — white background matching IRCM style -->
+  <header class="w-full bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-[72px]">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3 shrink-0">
+        <!-- SVG wave logo -->
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="44" height="44" rx="4" fill="#1B3A6B"/>
+          <path d="M8 28 Q13 18 18 22 Q23 26 28 16 Q33 6 38 16" stroke="#00B8D4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M8 32 Q13 22 18 26 Q23 30 28 20 Q33 10 38 20" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+        </svg>
+        <div>
+          <div class="text-[22px] font-bold text-brand-navy leading-none tracking-tight">Zetta<span class="text-brand-teal">RCM</span></div>
+          <div class="text-[9px] tracking-[0.22em] text-slate-400 uppercase font-medium mt-0.5">Revenue Cycle Management</div>
+        </div>
       </a>
 
-      <nav class="hidden lg:flex space-x-1 text-sm font-medium text-slate-400 h-full items-center">
-        <a href="/" class="text-brand-teal border-b-2 border-brand-teal px-4 py-8">Home</a>
-        
-        <!-- Why ZettaRCM Dropdown Block -->
-        <div class="relative group py-8">
-          <button class="hover:text-white flex items-center gap-1 px-4 cursor-pointer focus:outline-none transition-colors uppercase tracking-wide text-xs">
-            Why ZettaRCM <span class="text-[8px] text-slate-600 group-hover:text-white">▼</span>
+      <!-- Nav -->
+      <nav class="hidden lg:flex items-center h-full text-[13.5px] font-medium text-brand-navy">
+
+        <a href="/" class="px-4 h-full flex items-center border-b-2 border-brand-teal text-brand-teal">Home</a>
+
+        <!-- Why ZettaRCM -->
+        <div class="dropdown-parent relative h-full flex items-center">
+          <button class="px-4 h-full flex items-center gap-1 hover:text-brand-teal transition-colors cursor-pointer border-b-2 border-transparent hover:border-brand-teal">
+            Why ZettaRCM
+            <svg class="w-3 h-3 fill-current opacity-60" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </button>
-          <div class="absolute top-full left-0 w-64 bg-panel-dark border border-slate-800 p-2 hidden group-hover:block mega-menu-shadow">
-            <a href="/our-company/" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Our Company Profile</a>
-            <a href="/nationwide-medical-billing/" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Nationwide Medical Billing</a>
-            <a href="/privacy-policy/" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Privacy Policy</a>
-            <a href="/terms-and-conditions/" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Terms and Conditions</a>
+          <div class="dropdown-menu absolute top-full left-0 w-58 bg-white border border-slate-200 shadow-xl z-50 py-1 min-w-[220px]">
+            <a href="/our-company/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Our Company</a>
+            <a href="/nationwide-medical-billing/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Nationwide Medical Billing</a>
+            <a href="/privacy-policy/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Privacy Policy</a>
+            <a href="/terms-and-conditions/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Terms & Conditions</a>
           </div>
         </div>
 
-        <!-- Services Dropdown Block -->
-        <div class="relative group py-8">
-          <!-- UPDATED: Services link is now functional and points to the medical coding services landing page -->
-          <a href="/medical-coding-services/" class="hover:text-white flex items-center gap-1 px-4 cursor-pointer transition-colors uppercase tracking-wide text-xs">
-            Services <span class="text-[8px] text-slate-600 group-hover:text-white">▼</span>
-          </a>
-          <div class="absolute top-full left-1/2 -translate-x-1/3 w-[860px] bg-panel-dark border border-slate-800 hidden group-hover:grid grid-cols-12 mega-menu-shadow">
-            <div class="col-span-4 bg-obsidian/40 border-r border-slate-800/80 p-5 space-y-1">
-              <div class="bg-obsidian text-brand-teal text-xs font-semibold p-3.5 border-l-2 border-brand-teal">Revenue Cycle Services</div>
-              <div class="text-slate-500 text-xs p-3.5 hover:text-white cursor-pointer transition-colors">Credentialing Services</div>
-              <div class="text-slate-500 text-xs p-3.5 hover:text-white cursor-pointer transition-colors">Healthcare Operational Marketing</div>
-            </div>
-            <div class="col-span-8 p-8 grid grid-cols-2 gap-6 text-left">
-              <div class="space-y-1">
-                <h4 class="text-white font-semibold text-xs uppercase tracking-wide">Medical Billing Solutions</h4>
-                <p class="text-xs text-slate-400 leading-relaxed font-light normal-case">Optimize processing timelines and ensure accurate claim submission tracking profiles.</p>
-              </div>
-              <div class="space-y-1">
-                <h4 class="text-white font-semibold text-xs uppercase tracking-wide">Medical Credentialing Services</h4>
-                <p class="text-xs text-slate-400 leading-relaxed font-light normal-case">Streamline provider onboarding and enrollment parameters directly across key networks.</p>
-              </div>
-              <div class="space-y-1">
-                <h4 class="text-white font-semibold text-xs uppercase tracking-wide"><a href="/medical-coding-services/" class="hover:text-brand-teal transition-colors">Advanced Coding Compliance</a></h4>
-                <p class="text-xs text-slate-400 leading-relaxed font-light normal-case">Enforce precise ICD-10 and CPT data capture rules to eliminate coding rejections.</p>
-              </div>
-              <div class="space-y-1">
-                <h4 class="text-white font-semibold text-xs uppercase tracking-wide">Denial Management Platforms</h4>
-                <p class="text-xs text-slate-400 leading-relaxed font-light normal-case">Isolate root-cause transaction errors to activate aggressive claim appeal workflows.</p>
-              </div>
-              <div class="space-y-1">
-                <h4 class="text-white font-semibold text-xs uppercase tracking-wide">Accounts Receivable Recovery</h4>
-                <p class="text-xs text-slate-400 leading-relaxed font-light normal-case">Pursue outstanding aging liabilities systematically to clean up lagging cash cycles.</p>
-              </div>
-              <div class="space-y-1">
-                <h4 class="text-white font-semibold text-xs uppercase tracking-wide">Out of Network Allocations</h4>
-                <p class="text-xs text-slate-400 leading-relaxed font-light normal-case">Maximize payment distributions and protect non-contracted clinical encounters.</p>
-              </div>
-              <div class="col-span-2 pt-6 border-t border-slate-800/80 flex gap-4 justify-end text-xs">
-                <a href="#services" class="border border-slate-700 text-slate-300 font-mono text-[11px] px-4 py-2.5 hover:border-brand-teal transition-all">View All Services</a>
-                <a href="#intake" class="bg-brand-teal text-obsidian font-semibold font-mono text-[11px] px-4 py-2.5 hover:bg-white transition-all">Get A Free Quote</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Specialties Dropdown Block -->
-        <div class="relative group py-8">
-          <button class="hover:text-white flex items-center gap-1 px-4 cursor-pointer focus:outline-none transition-colors uppercase tracking-wide text-xs">
-            Specialties <span class="text-[8px] text-slate-600 group-hover:text-white">▼</span>
+        <!-- Services -->
+        <div class="mega-parent relative h-full flex items-center">
+          <button class="px-4 h-full flex items-center gap-1 hover:text-brand-teal transition-colors cursor-pointer border-b-2 border-transparent hover:border-brand-teal">
+            Services
+            <svg class="w-3 h-3 fill-current opacity-60" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </button>
-          <div class="absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-panel-dark border border-slate-800 p-8 hidden group-hover:block mega-menu-shadow">
-            <div class="grid grid-cols-4 gap-3 text-left text-xs font-medium">
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Orthopedic Architecture</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Urology Infrastructure</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Dental Solutions</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Pathology Networks</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Mental Health Modules</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Radiology Deployments</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Cardiology Frameworks</a>
-              <a href="#specialties" class="p-3 border border-slate-800/60 bg-obsidian hover:border-brand-teal hover:text-brand-teal transition-all">Neurology Systems</a>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-800/80 flex justify-end gap-3">
-              <a href="#specialties" class="border border-slate-700 text-slate-300 font-mono text-[11px] px-4 py-2.5 hover:border-brand-teal transition-all">View All Specialties</a>
-              <a href="#proposal" class="bg-brand-teal text-obsidian font-semibold font-mono text-[11px] px-4 py-2.5 hover:bg-white transition-all">Contact Us</a>
+          <div class="mega-menu absolute top-full left-1/2 -translate-x-1/3 w-[860px] bg-white border border-slate-200 shadow-2xl z-50">
+            <div class="flex">
+              <div class="w-48 bg-slate-50 border-r border-slate-200 py-4 shrink-0">
+                <div class="px-4 pb-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider">Categories</div>
+                <div class="px-4 py-2.5 text-[13px] text-brand-navy font-semibold bg-white border-l-2 border-brand-teal">Revenue Cycle</div>
+                <div class="px-4 py-2.5 text-[13px] text-slate-500 hover:text-brand-navy cursor-pointer transition-all">Credentialing</div>
+                <div class="px-4 py-2.5 text-[13px] text-slate-500 hover:text-brand-navy cursor-pointer transition-all">Healthcare Marketing</div>
+              </div>
+              <div class="flex-1 p-5 grid grid-cols-2 gap-0.5">
+                <a href="/services/medical-billing/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-2 8H7v-2h4v2zm4-4H7v-2h8v2z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Medical Billing</div><div class="text-[11px] text-slate-500 mt-0.5">Accurate claims, faster payments</div></div>
+                </a>
+                <a href="/services/medical-credentialing/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 3h2v2h-2V7zm0 4h2v6h-2v-6zm-4-4h2v2H7V7zm0 4h2v6H7v-6zm8-4h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Medical Credentialing</div><div class="text-[11px] text-slate-500 mt-0.5">Enroll with payers quickly</div></div>
+                </a>
+                <a href="/services/medical-coding/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Medical Coding</div><div class="text-[11px] text-slate-500 mt-0.5">ICD-10 & CPT compliance</div></div>
+                </a>
+                <a href="/services/denial-management/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Denial Management</div><div class="text-[11px] text-slate-500 mt-0.5">Resolve & recover denials fast</div></div>
+                </a>
+                <a href="/services/ar-follow-up/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">A/R Follow Up</div><div class="text-[11px] text-slate-500 mt-0.5">Chase every outstanding claim</div></div>
+                </a>
+                <a href="/services/out-of-network-billing/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Out of Network Billing</div><div class="text-[11px] text-slate-500 mt-0.5">Maximize non-contracted revenue</div></div>
+                </a>
+                <a href="/services/revenue-cycle-management/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Revenue Cycle Management</div><div class="text-[11px] text-slate-500 mt-0.5">End-to-end RCM solutions</div></div>
+                </a>
+                <a href="/services/prior-authorization/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Prior Authorization</div><div class="text-[11px] text-slate-500 mt-0.5">Faster approvals, fewer denials</div></div>
+                </a>
+                <a href="/services/front-office-management/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Front Office Management</div><div class="text-[11px] text-slate-500 mt-0.5">Streamlined intake & scheduling</div></div>
+                </a>
+                <a href="/services/quality-payment-program/" class="flex items-start gap-3 p-3 hover:bg-light-bg transition-all group">
+                  <svg class="w-5 h-5 fill-brand-teal shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <div><div class="text-[13px] font-semibold text-slate-800 group-hover:text-brand-teal">Quality Payment Program</div><div class="text-[11px] text-slate-500 mt-0.5">MIPS reporting & value-based care</div></div>
+                </a>
+                <div class="col-span-2 pt-3 mt-1 border-t border-slate-100 flex justify-between items-center px-3">
+                  <a href="/services/" class="text-[12px] text-slate-500 hover:text-brand-teal transition-colors">View all 19 services →</a>
+                  <a href="#quote" class="bg-brand-navy text-white text-[12px] font-semibold px-5 py-2 hover:bg-brand-teal transition-all">Get A Free Quote</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Domain Areas Dropdown Block -->
-        <div class="relative group py-8">
-          <button class="hover:text-white flex items-center gap-1 px-4 cursor-pointer focus:outline-none transition-colors uppercase tracking-wide text-xs">
-            Domain Areas <span class="text-[8px] text-slate-600 group-hover:text-white">▼</span>
+        <!-- Specialties -->
+        <div class="mega-parent2 relative h-full flex items-center">
+          <button class="px-4 h-full flex items-center gap-1 hover:text-brand-teal transition-colors cursor-pointer border-b-2 border-transparent hover:border-brand-teal">
+            Specialties
+            <svg class="w-3 h-3 fill-current opacity-60" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </button>
-          <div class="absolute top-full left-1/2 -translate-x-2/3 w-[880px] bg-panel-dark border border-slate-800 p-8 hidden group-hover:grid grid-cols-4 gap-8 mega-menu-shadow text-left text-xs">
-            <div class="space-y-4">
-              <h5 class="text-white font-semibold text-xs tracking-wider border-b border-slate-800 pb-2">Revenue Partners</h5>
-              <ul class="space-y-2.5 text-slate-400 font-light">
-                <li><a href="#domains" class="hover:text-brand-teal">Solo and Private Practices</a></li>
-                <li><a href="#domains" class="hover:text-brand-teal">Enterprise Health Systems</a></li>
-                <li><a href="#domains" class="hover:text-brand-teal">Ambulatory Surgery Centers</a></li>
-                <li><a href="#domains" class="hover:text-brand-teal">Skilled Nursing Facilities</a></li>
-              </ul>
-              <a href="#domains" class="bg-obsidian text-slate-400 border border-slate-800 text-[10px] px-3 py-1.5 block text-center hover:text-brand-teal transition-colors">View All</a>
+          <div class="mega-menu2 absolute top-full left-1/2 -translate-x-1/2 w-[780px] bg-white border border-slate-200 shadow-2xl z-50 p-6">
+            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4">Medical Specialties We Serve</div>
+            <div class="grid grid-cols-5 gap-2">
+              <a href="/specialties/mental-health/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Mental Health</a>
+              <a href="/specialties/radiology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Radiology</a>
+              <a href="/specialties/cardiology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Cardiology</a>
+              <a href="/specialties/neurology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Neurology</a>
+              <a href="/specialties/dermatology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Dermatology</a>
+              <a href="/specialties/orthopedics/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Orthopedics</a>
+              <a href="/specialties/pediatrics/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Pediatrics</a>
+              <a href="/specialties/oncology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Oncology</a>
+              <a href="/specialties/pain-management/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Pain Management</a>
+              <a href="/specialties/gastroenterology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Gastroenterology</a>
+              <a href="/specialties/ob-gyn/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">OB/GYN</a>
+              <a href="/specialties/urology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Urology</a>
+              <a href="/specialties/ophthalmology/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Ophthalmology</a>
+              <a href="/specialties/urgent-care/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Urgent Care</a>
+              <a href="/specialties/chiropractic/" class="px-3 py-2 text-[12px] text-slate-600 border border-slate-200 hover:border-brand-teal hover:text-brand-teal hover:bg-light-bg transition-all text-center">Chiropractic</a>
             </div>
-            <div class="space-y-2 border border-slate-800/80 p-4 bg-obsidian/60 text-center flex flex-col justify-between">
-              <span class="text-[10px] text-slate-500 font-semibold tracking-wider uppercase">Premier Billing State</span>
-              <span class="text-xl font-bold tracking-widest text-white block py-4 font-sans border-y border-slate-800/60">NEW YORK</span>
-              <span class="text-[10px] text-brand-teal font-medium tracking-wide">Primary Processing Base</span>
-            </div>
-            <div class="space-y-4">
-              <h5 class="text-white font-semibold text-xs tracking-wider border-b border-slate-800 pb-2">Pioneer States Hub</h5>
-              <ul class="space-y-2.5 text-slate-400 font-light">
-                <li>Texas Compliance Zones</li>
-                <li>Washington Compliance Zones</li>
-                <li>New Jersey Payer Channels</li>
-                <li>Alabama Regional Pipelines</li>
-              </ul>
-              <a href="#domains" class="bg-obsidian text-slate-400 border border-slate-800 text-[10px] px-3 py-1.5 block text-center hover:text-brand-teal transition-colors">View All States</a>
-            </div>
-            <div class="space-y-4">
-              <h5 class="text-white font-semibold text-xs tracking-wider border-b border-slate-800 pb-2">City Zones</h5>
-              <ul class="space-y-2.5 text-slate-400 font-light">
-                <li>Atlanta Regional Hub</li>
-                <li>Houston Regional Hub</li>
-                <li>Chicago Regional Hub</li>
-                <li>Dallas Regional Hub</li>
-              </ul>
-              <a href="#domains" class="bg-obsidian text-slate-400 border border-slate-800 text-[10px] px-3 py-1.5 block text-center hover:text-brand-teal transition-colors">View All Cities</a>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+              <span class="text-[12px] text-slate-400">Serving 35+ specialties nationwide</span>
+              <a href="/specialties/" class="border border-slate-300 text-slate-600 text-[12px] px-5 py-2 hover:border-brand-teal hover:text-brand-teal transition-all">View All Specialties →</a>
             </div>
           </div>
         </div>
 
-        <!-- Resources Dropdown Block -->
-        <div class="relative group py-8">
-          <button class="hover:text-white flex items-center gap-1 px-4 cursor-pointer focus:outline-none transition-colors uppercase tracking-wide text-xs">
-            Resources <span class="text-[8px] text-slate-600 group-hover:text-white">▼</span>
+        <!-- Domain Areas -->
+        <div class="dropdown-parent relative h-full flex items-center">
+          <button class="px-4 h-full flex items-center gap-1 hover:text-brand-teal transition-colors cursor-pointer border-b-2 border-transparent hover:border-brand-teal">
+            Domain Areas
+            <svg class="w-3 h-3 fill-current opacity-60" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
           </button>
-          <div class="absolute top-full right-0 w-64 bg-panel-dark border border-slate-800 p-2 hidden group-hover:block mega-menu-shadow">
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">ZettaRCM Blog</a>
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Revenue Management Library</a>
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Newsroom Broadcasts</a>
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Clinical Case Studies</a>
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Performance FAQs</a>
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all">Provider Intake Documentation</a>
-            <div class="border-t border-slate-800 my-1"></div>
-            <a href="#resources" class="block p-3 text-xs text-slate-400 hover:bg-obsidian hover:text-brand-teal transition-all flex justify-between">Insurance Partners <span>▶</span></a>
+          <div class="dropdown-menu absolute top-full left-0 bg-white border border-slate-200 shadow-xl z-50 min-w-[180px] py-1">
+            <a href="#" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Revenue Partners</a>
+            <a href="#" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Premier Billing State</a>
+            <a href="#" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Pioneer States Hub</a>
+            <a href="#" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">City Zones</a>
           </div>
         </div>
 
-        <a href="#proposal" class="hover:text-white px-4 py-8 transition-colors uppercase tracking-wide text-xs">Contact Us</a>
+        <!-- Resources -->
+        <div class="dropdown-parent relative h-full flex items-center">
+          <button class="px-4 h-full flex items-center gap-1 hover:text-brand-teal transition-colors cursor-pointer border-b-2 border-transparent hover:border-brand-teal">
+            Resources
+            <svg class="w-3 h-3 fill-current opacity-60" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="dropdown-menu absolute top-full right-0 w-52 bg-white border border-slate-200 shadow-xl z-50 py-1">
+            <a href="/resources/blog/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Blog</a>
+            <a href="/resources/rcm-library/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">RCM Library</a>
+            <a href="/resources/newsroom/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Newsroom</a>
+            <a href="/resources/case-studies/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Case Studies</a>
+            <a href="/resources/faqs/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">FAQs</a>
+            <a href="/resources/provider-form/" class="block px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Provider Form</a>
+            <div class="mx-4 border-t border-slate-100 my-1"></div>
+            <a href="/resources/insurance-partners/" class="flex justify-between items-center px-5 py-3 text-[13px] text-slate-700 hover:bg-light-bg hover:text-brand-teal transition-all border-l-2 border-transparent hover:border-brand-teal">Insurance Partners <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+          </div>
+        </div>
+
+        <a href="/contact/" class="px-4 h-full flex items-center hover:text-brand-teal transition-colors border-b-2 border-transparent hover:border-brand-teal">Contact Us</a>
       </nav>
 
-      <div class="flex items-center gap-4">
-        <div class="hidden xl:flex items-center border border-slate-800 bg-[#0B0F19] px-4 py-2 text-xs">
-          <input type="text" placeholder="Search system repository..." class="bg-transparent text-slate-200 outline-none w-36 focus:w-48 transition-all font-light">
-          <span class="text-brand-teal font-mono font-bold cursor-pointer">↵</span>
-        </div>
-        <a href="#intake" class="bg-brand-teal text-obsidian px-6 py-3 text-xs font-semibold tracking-wide hover:bg-white hover:text-obsidian transition-all duration-300 shadow-md">
-          Execute System Assessment
-        </a>
-      </div>
-
+      <!-- Search icon — exactly like IRCM -->
+      <button class="hidden lg:flex items-center justify-center w-11 h-11 bg-brand-navy hover:bg-brand-teal transition-colors shrink-0">
+        <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      </button>
     </div>
   </header>
 
-  <section class="relative min-h-[calc(100vh-144px)] flex items-center px-6 py-16 bg-gradient-to-b from-slate-900/20 via-obsidian to-[#080B12] border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
-      
-      <div class="lg:col-span-7 space-y-8">
-        <div class="inline-flex items-center space-x-2 border border-slate-700 bg-panel-dark px-4 py-1.5">
-          <span class="w-1.5 h-1.5 bg-accent-green"></span>
-          <span class="text-[11px] font-medium tracking-wider text-slate-400 uppercase">National Operational Coverage Array</span>
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[620px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&q=85&fit=crop&crop=center" alt="Medical professionals reviewing billing" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-navy/95 via-brand-navy/80 to-brand-navy/30"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center w-full">
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 border border-brand-teal/40 bg-brand-teal/10 px-4 py-2 text-brand-teal text-[12px] font-bold uppercase tracking-widest">
+          <span class="w-2 h-2 bg-brand-teal rounded-full"></span>
+          #1 Medical Billing Company in New York
         </div>
-        <h1 class="text-4xl md:text-6xl font-light tracking-tight text-white leading-[1.08]">
-          Precision Revenue Infrastructure.<br>
-          <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-brand-teal">
-            Maximum Cash Flow Velocity.
-          </span>
+        <h1 class="text-4xl md:text-5xl lg:text-[52px] font-bold text-white leading-[1.1] tracking-tight">
+          Smarter Revenue Cycle.<br>
+          <span class="text-brand-teal">More Cash.</span><br>
+          Less Stress.
         </h1>
-        <p class="text-sm md:text-base text-slate-400 max-w-xl leading-relaxed font-light">
-          ZettaRCM architecturally coordinates medical coding pipelines, provider enrollment tracks, and active cash processing setups across New York and federal corridors. We anchor natively inside your existing software networks to stop financial leakage points, secure clean claim rates, and optimize margin delivery.
+        <p class="text-[15px] text-slate-300 leading-relaxed max-w-lg font-light">
+          ZettaRCM combines AI-powered technology with certified billing professionals to maximize your practice revenue. From claim submission to denial resolution — we handle every step so you can focus on patient care.
         </p>
-        <div class="flex flex-wrap gap-4 pt-2">
-          <a href="#intake" class="bg-brand-teal text-obsidian text-xs font-bold uppercase tracking-wider px-8 py-4 hover:bg-white hover:text-obsidian transition-all duration-300">
-            Execute Capital Assessment →
+        <div class="flex flex-wrap gap-3 pt-1">
+          <div class="flex items-center gap-2.5 bg-white/10 border border-white/20 px-4 py-2.5">
+            <div class="text-yellow-400 text-sm">★★★★★</div>
+            <div><div class="text-white text-[12px] font-semibold">Google Verified</div><div class="text-slate-400 text-[10px]">5.0 Rating</div></div>
+          </div>
+          <div class="flex items-center gap-2.5 bg-white/10 border border-white/20 px-4 py-2.5">
+            <svg class="w-5 h-5 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <div><div class="text-white text-[12px] font-semibold">AAPC Certified</div><div class="text-slate-400 text-[10px]">Coding Specialists</div></div>
+          </div>
+          <div class="flex items-center gap-2.5 bg-white/10 border border-white/20 px-4 py-2.5">
+            <svg class="w-5 h-5 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+            <div><div class="text-white text-[12px] font-semibold">HIPAA Compliant</div><div class="text-slate-400 text-[10px]">Fully Secure</div></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 pt-1">
+          <a href="tel:+18005160192" class="bg-brand-teal text-brand-navy text-[13px] font-bold uppercase tracking-wider px-8 py-4 hover:bg-white transition-all duration-300">
+            Speak to an Expert Today
           </a>
-          <a href="tel:+18005550192" class="border border-slate-700 text-slate-300 text-xs font-semibold uppercase tracking-wider px-6 py-4 hover:border-slate-400 hover:text-white transition-all duration-300">
-            Speak to an Expert
+          <a href="#quote" class="border-2 border-white/40 text-white text-[13px] font-semibold uppercase tracking-wider px-6 py-4 hover:border-brand-teal hover:text-brand-teal transition-all duration-300">
+            Free Practice Audit
           </a>
         </div>
       </div>
 
-      <div id="intake" class="lg:col-span-5 bg-panel-dark border border-slate-800 p-8 shadow-2xl relative">
-        <h3 class="text-lg font-bold tracking-wide text-white uppercase mb-1">Initialize System Assessment</h3>
-        <p class="text-xs text-slate-400 mb-6 font-light">Analyze baseline collections metrics to isolate processing leakage factors.</p>
-        
-        <form class="space-y-4" onsubmit="event.preventDefault();">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="space-y-1">
-              <label class="text-[10px] tracking-wide text-slate-500 uppercase font-semibold block">Select Service Type</label>
-              <select class="w-full bg-obsidian border border-slate-800 text-slate-300 text-xs p-3 outline-none focus:border-brand-teal cursor-pointer">
-                <option>Medical Billing Solutions</option>
-                <option>Credentialing & Enrollment</option>
-                <option>Advanced Coding Compliance</option>
-                <option>Denial Management & Appeals</option>
-              </select>
-            </div>
-            <div class="space-y-1">
-              <label class="text-[10px] tracking-wide text-slate-500 uppercase font-semibold block">Select Healthcare Type</label>
-              <select class="w-full bg-obsidian border border-slate-800 text-slate-300 text-xs p-3 outline-none focus:border-brand-teal cursor-pointer">
-                <option>Solo / Private Practice</option>
-                <option>Group Provider Network</option>
-                <option>Enterprise Hospital System</option>
-              </select>
-            </div>
+      <!-- Quote Form -->
+      <div id="quote" class="lg:col-span-6 xl:col-span-5 xl:col-start-8">
+        <div class="bg-white shadow-2xl">
+          <div class="bg-brand-navy px-7 py-5">
+            <h3 class="text-white text-[17px] font-bold">Get A Free Quote Today</h3>
+            <p class="text-slate-400 text-[12px] mt-1">Our experts will contact you within 24 hours.</p>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="space-y-1">
-              <label class="text-[10px] tracking-wide text-slate-500 uppercase font-semibold block">Full Name</label>
-              <input type="text" placeholder="Dr. Jane Smith" class="w-full bg-obsidian border border-slate-800 text-slate-200 text-xs p-3 outline-none focus:border-brand-teal transition-colors">
-            </div>
-            <div class="space-y-1">
-              <label class="text-[10px] tracking-wide text-slate-500 uppercase font-semibold block">Secure Email</label>
-              <input type="email" placeholder="jane.smith@clinic.org" class="w-full bg-obsidian border border-slate-800 text-slate-200 text-xs p-3 outline-none focus:border-brand-teal transition-colors">
-            </div>
+          <div class="p-7">
+            <form class="space-y-3" onsubmit="event.preventDefault()">
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Full Name *</label>
+                  <input type="text" placeholder="Dr. Jane Smith" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Practice Name *</label>
+                  <input type="text" placeholder="Your Practice" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Email Address *</label>
+                  <input type="email" placeholder="doctor@clinic.com" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Phone Number *</label>
+                  <input type="tel" placeholder="(800) 000-0000" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                </div>
+              </div>
+              <div>
+                <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Service Needed *</label>
+                <select class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
+                  <option>Medical Billing Services</option>
+                  <option>Credentialing & Enrollment</option>
+                  <option>Medical Coding Services</option>
+                  <option>Denial Management</option>
+                  <option>A/R Follow Up</option>
+                  <option>Revenue Cycle Management</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Healthcare Type *</label>
+                  <select class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
+                    <option>Solo / Private Practice</option>
+                    <option>Group Provider Network</option>
+                    <option>Enterprise Hospital</option>
+                    <option>Surgery Center</option>
+                    <option>Nursing Facility</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Best Time to Call</label>
+                  <select class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
+                    <option>Morning (9AM–12PM)</option>
+                    <option>Afternoon (12–5PM)</option>
+                    <option>Evening (5–8PM)</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="w-full bg-brand-teal text-brand-navy font-bold text-[13px] uppercase tracking-widest py-3.5 hover:bg-brand-navy hover:text-white transition-all duration-300 cursor-pointer mt-1">
+                Submit — Get My Free Quote
+              </button>
+            </form>
           </div>
-          <button class="w-full bg-brand-teal text-obsidian font-semibold text-xs uppercase tracking-widest py-4 mt-2 hover:bg-white hover:text-obsidian transition-all duration-300 cursor-pointer">
-            Get Started →
-          </button>
-        </form>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <div class="w-full bg-brand-teal overflow-hidden py-3.5 border-b border-slate-800/80 flex items-center">
-    <div class="flex space-x-12 whitespace-nowrap text-xs font-semibold tracking-[0.18em] text-obsidian uppercase">
-      <span>Revenue Cycle Analytics</span><span>•</span>
-      <span>Medical Coding Optimization</span><span>•</span>
-      <span>Proactive Denial Mitigation</span><span>•</span>
-      <span>Provider Enrollment Networks</span><span>•</span>
-      <span>Accounts Receivable Recovery Acceleration</span>
+  <!-- TICKER -->
+  <div class="w-full bg-brand-teal overflow-hidden py-3 border-y border-brand-teal">
+    <div class="ticker-track text-[12px] font-bold tracking-[0.15em] text-brand-navy uppercase select-none">
+      <span class="px-8">Medical Billing Services</span><span class="px-2">•</span>
+      <span class="px-8">Credentialing & Enrollment</span><span class="px-2">•</span>
+      <span class="px-8">Medical Coding</span><span class="px-2">•</span>
+      <span class="px-8">Denial Management</span><span class="px-2">•</span>
+      <span class="px-8">A/R Follow Up</span><span class="px-2">•</span>
+      <span class="px-8">Out of Network Billing</span><span class="px-2">•</span>
+      <span class="px-8">Revenue Cycle Management</span><span class="px-2">•</span>
+      <span class="px-8">Prior Authorization</span><span class="px-2">•</span>
+      <span class="px-8">HIPAA Compliant</span><span class="px-2">•</span>
+      <span class="px-8">AAPC Certified Coders</span><span class="px-2">•</span>
+      <span class="px-8">Medical Billing Services</span><span class="px-2">•</span>
+      <span class="px-8">Credentialing & Enrollment</span><span class="px-2">•</span>
+      <span class="px-8">Medical Coding</span><span class="px-2">•</span>
+      <span class="px-8">Denial Management</span><span class="px-2">•</span>
+      <span class="px-8">A/R Follow Up</span><span class="px-2">•</span>
+      <span class="px-8">Out of Network Billing</span><span class="px-2">•</span>
+      <span class="px-8">Revenue Cycle Management</span><span class="px-2">•</span>
+      <span class="px-8">Prior Authorization</span><span class="px-2">•</span>
+      <span class="px-8">HIPAA Compliant</span><span class="px-2">•</span>
+      <span class="px-8">AAPC Certified Coders</span><span class="px-2">•</span>
     </div>
   </div>
 
-  <section id="services" class="px-6 py-24 bg-[#0F1420] border-b border-slate-800/80">
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 px-6 bg-[#0B1828]">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-20">
-        <span class="text-xs font-semibold tracking-wider text-brand-teal block uppercase mb-2">System Capacities Matrix</span>
-        <h2 class="text-3xl md:text-5xl font-light text-white tracking-tight">Full-Spectrum Operational Modules</h2>
-        <p class="text-sm text-slate-400 mt-4 leading-relaxed font-light">
-          Each functional system corrects distinct collection processing leaks inside active billing networks.
-        </p>
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-[11px] font-bold tracking-widest text-brand-teal uppercase block mb-3">What We Offer</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Complete Revenue Cycle Solutions</h2>
+        <p class="text-[15px] text-slate-400 mt-4 font-light leading-relaxed">Everything your practice needs to get paid faster, reduce denials, and grow revenue — all under one roof.</p>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-panel-dark border border-slate-800 p-8 hover:border-brand-teal/40 transition-all duration-300 flex flex-col justify-between group">
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-white group-hover:text-brand-teal transition-colors">Medical Billing Infrastructure</h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-light">Precise claim transmission configurations designed to accelerate cash flow speed and eliminate technical record handling errors.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-slate-800/40">
+        <a href="/services/medical-billing/" class="group bg-[#0F1E30] p-9 flex gap-6 hover:bg-[#142234] transition-all border-l-2 border-transparent hover:border-brand-teal">
+          <div class="shrink-0 w-14 h-14 border border-slate-700 group-hover:border-brand-teal flex items-center justify-center transition-all bg-slate-900">
+            <svg class="w-7 h-7 fill-brand-teal" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-2 8H7v-2h4v2zm4-4H7v-2h8v2z"/></svg>
           </div>
-          <a href="#intake" class="text-xs font-semibold text-brand-teal tracking-wide pt-6 block uppercase">Initialize Module →</a>
-        </div>
-        <div class="bg-panel-dark border border-slate-800 p-8 hover:border-brand-teal/40 transition-all duration-300 flex flex-col justify-between group">
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-white group-hover:text-brand-teal transition-colors">Credentialing & Enrollment</h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-light">Fast-tracked carrier enrollment pipelines and CAQH tracking to protect active provider timelines from processing delays.</p>
+          <div class="space-y-2">
+            <h3 class="text-[17px] font-bold text-white group-hover:text-brand-teal transition-colors">Medical Billing Services</h3>
+            <p class="text-[13px] text-slate-400 leading-relaxed font-light">Precise billing processes ensure claims are handled accurately, helping you receive payments without delays.</p>
+            <span class="text-brand-teal text-[12px] font-bold uppercase tracking-wider inline-flex items-center gap-1.5">Learn More <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span>
           </div>
-          <a href="#intake" class="text-xs font-semibold text-brand-teal tracking-wide pt-6 block uppercase">Initialize Module →</a>
-        </div>
-        <div class="bg-panel-dark border border-slate-800 p-8 hover:border-brand-teal/40 transition-all duration-300 flex flex-col justify-between group">
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-white group-hover:text-brand-teal transition-colors"><a href="/medical-coding-services/" class="hover:text-brand-teal transition-colors">Advanced Coding Integrity</a></h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-light">Rigorous applying of ICD-10, CPT, and HCPCS standards to maximize processing accuracy and completely block compliance leakage.</p>
+        </a>
+        <a href="/services/medical-credentialing/" class="group bg-[#0F1E30] p-9 flex gap-6 hover:bg-[#142234] transition-all border-l-2 border-transparent hover:border-brand-teal">
+          <div class="shrink-0 w-14 h-14 border border-slate-700 group-hover:border-brand-teal flex items-center justify-center transition-all bg-slate-900">
+            <svg class="w-7 h-7 fill-brand-teal" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 3h2v2h-2V7zm0 4h2v6h-2v-6zm-4-4h2v2H7V7zm0 4h2v6H7v-6zm8-4h2v2h-2V7zm0 4h2v6h-2v-6z"/></svg>
           </div>
-          <a href="/medical-coding-services/" class="text-xs font-semibold text-brand-teal tracking-wide pt-6 block uppercase">Initialize Module →</a>
-        </div>
-        <div class="bg-panel-dark border border-slate-800 p-8 hover:border-brand-teal/40 transition-all duration-300 flex flex-col justify-between group">
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-white group-hover:text-brand-teal transition-colors">Denial Interception Systems</h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-light">Systematic root-cause analytics and strategic appeals designed to permanently suppress rejection ratios and recover hidden cash flow.</p>
+          <div class="space-y-2">
+            <h3 class="text-[17px] font-bold text-white group-hover:text-brand-teal transition-colors">Medical Credentialing</h3>
+            <p class="text-[13px] text-slate-400 leading-relaxed font-light">We assist in getting you properly credentialed with insurers quickly and keeping your information accurate and up-to-date.</p>
+            <span class="text-brand-teal text-[12px] font-bold uppercase tracking-wider inline-flex items-center gap-1.5">Learn More <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span>
           </div>
-          <a href="#intake" class="text-xs font-semibold text-brand-teal tracking-wide pt-6 block uppercase">Initialize Module →</a>
-        </div>
-        <div class="bg-panel-dark border border-slate-800 p-8 hover:border-brand-teal/40 transition-all duration-300 flex flex-col justify-between group">
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-white group-hover:text-brand-teal transition-colors">Accounts Receivable Follow-Up</h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-light">Proactive, relentless collections auditing that reviews aging, unpaid balances until full performance alignment is achieved.</p>
+        </a>
+        <a href="/services/medical-coding/" class="group bg-[#0F1E30] p-9 flex gap-6 hover:bg-[#142234] transition-all border-l-2 border-transparent hover:border-brand-teal">
+          <div class="shrink-0 w-14 h-14 border border-slate-700 group-hover:border-brand-teal flex items-center justify-center transition-all bg-slate-900">
+            <svg class="w-7 h-7 fill-brand-teal" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
           </div>
-          <a href="#intake" class="text-xs font-semibold text-brand-teal tracking-wide pt-6 block uppercase">Initialize Module →</a>
-        </div>
-        <div class="bg-panel-dark border border-slate-800 p-8 hover:border-brand-teal/40 transition-all duration-300 flex flex-col justify-between group">
-          <div class="space-y-4">
-            <h3 class="text-lg font-semibold text-white group-hover:text-brand-teal transition-colors">Out-of-Network Recovery</h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-light">Sophisticated negotiation models configured to protect non-contracted distributions from arbitrary payer reductions.</p>
+          <div class="space-y-2">
+            <h3 class="text-[17px] font-bold text-white group-hover:text-brand-teal transition-colors">Medical Coding Services</h3>
+            <p class="text-[13px] text-slate-400 leading-relaxed font-light">Updated ICD-10 and CPT coding systems are utilized to maximize reimbursements and reduce claim errors.</p>
+            <span class="text-brand-teal text-[12px] font-bold uppercase tracking-wider inline-flex items-center gap-1.5">Learn More <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span>
           </div>
-          <a href="#intake" class="text-xs font-semibold text-brand-teal tracking-wide pt-6 block uppercase">Initialize Module →</a>
-        </div>
+        </a>
+        <a href="/services/denial-management/" class="group bg-[#0F1E30] p-9 flex gap-6 hover:bg-[#142234] transition-all border-l-2 border-transparent hover:border-brand-teal">
+          <div class="shrink-0 w-14 h-14 border border-slate-700 group-hover:border-brand-teal flex items-center justify-center transition-all bg-slate-900">
+            <svg class="w-7 h-7 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-[17px] font-bold text-white group-hover:text-brand-teal transition-colors">Denial Management</h3>
+            <p class="text-[13px] text-slate-400 leading-relaxed font-light">Effective denial management identifies causes, resolves disputes, and ensures timely appeals for better claim outcomes.</p>
+            <span class="text-brand-teal text-[12px] font-bold uppercase tracking-wider inline-flex items-center gap-1.5">Learn More <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span>
+          </div>
+        </a>
+        <a href="/services/ar-follow-up/" class="group bg-[#0F1E30] p-9 flex gap-6 hover:bg-[#142234] transition-all border-l-2 border-transparent hover:border-brand-teal">
+          <div class="shrink-0 w-14 h-14 border border-slate-700 group-hover:border-brand-teal flex items-center justify-center transition-all bg-slate-900">
+            <svg class="w-7 h-7 fill-brand-teal" viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"/></svg>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-[17px] font-bold text-white group-hover:text-brand-teal transition-colors">A/R Follow Up Services</h3>
+            <p class="text-[13px] text-slate-400 leading-relaxed font-light">Don't wait on payments. Our experts chase down every outstanding dollar with proactive A/R follow-up services.</p>
+            <span class="text-brand-teal text-[12px] font-bold uppercase tracking-wider inline-flex items-center gap-1.5">Learn More <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span>
+          </div>
+        </a>
+        <a href="/services/out-of-network-billing/" class="group bg-[#0F1E30] p-9 flex gap-6 hover:bg-[#142234] transition-all border-l-2 border-transparent hover:border-brand-teal">
+          <div class="shrink-0 w-14 h-14 border border-slate-700 group-hover:border-brand-teal flex items-center justify-center transition-all bg-slate-900">
+            <svg class="w-7 h-7 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-[17px] font-bold text-white group-hover:text-brand-teal transition-colors">Out of Network Billing</h3>
+            <p class="text-[13px] text-slate-400 leading-relaxed font-light">Our expertise ensures you avoid underpayments and receive timely compensation for all out-of-network claims.</p>
+            <span class="text-brand-teal text-[12px] font-bold uppercase tracking-wider inline-flex items-center gap-1.5">Learn More <svg class="w-3 h-3 fill-brand-teal" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></span>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-8">
+        <a href="/services/" class="inline-flex items-center gap-2 border border-slate-600 text-slate-300 text-[13px] font-semibold uppercase tracking-wider px-10 py-4 hover:border-brand-teal hover:text-brand-teal transition-all">
+          View All 19 Services
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <section id="why-us" class="px-6 py-24 bg-obsidian border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-      
-      <div class="lg:col-span-7 space-y-8">
+  <!-- STAY AHEAD -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=800&q=85&fit=crop" alt="Healthcare professionals" class="w-full h-[480px] object-cover">
+        <div class="absolute bottom-0 left-0 right-0 grid grid-cols-2 gap-px bg-brand-teal/20">
+          <div class="bg-brand-navy/90 backdrop-blur p-6 text-center"><div class="text-3xl font-bold text-brand-teal">99.2%</div><div class="text-[11px] text-slate-400 uppercase tracking-wider mt-1">First-Pass Rate</div></div>
+          <div class="bg-brand-navy/90 backdrop-blur p-6 text-center"><div class="text-3xl font-bold text-white">+30%</div><div class="text-[11px] text-slate-400 uppercase tracking-wider mt-1">Revenue Increase</div></div>
+        </div>
+      </div>
+      <div class="space-y-7">
         <div>
-          <span class="text-xs font-semibold tracking-wider text-brand-teal block uppercase mb-2">The Zetta Performance Layer</span>
-          <h2 class="text-3xl md:text-5xl font-light text-white tracking-tight">Stay Ahead of Ever-Changing Healthcare Guidelines</h2>
+          <span class="text-[11px] font-bold tracking-widest text-brand-teal uppercase block mb-3">The ZettaRCM Advantage</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-navy leading-tight">Stay Ahead in the Ever-Changing Healthcare Industry</h2>
         </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div class="border border-slate-800 bg-panel-dark p-6 space-y-2">
-            <h4 class="text-white font-semibold text-sm">Personalized Operational Advisory</h4>
-            <p class="text-xs text-slate-400 leading-relaxed">Direct support and strategy oversight led by a single dedicated billing lead assigned specifically to your account structure.</p>
+        <p class="text-[15px] text-slate-500 leading-relaxed font-light">Healthcare regulations change constantly. With ZettaRCM, you get a dedicated team that stays on top of every payer rule, coding update, and compliance requirement — so your revenue never slips.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-teal/10 flex items-center justify-center">
+              <svg class="w-5 h-5 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+            <div><h4 class="font-bold text-brand-navy text-[14px]">Personalized Advice</h4><p class="text-[12px] text-slate-500 mt-1 font-light">A dedicated specialist assigned directly to your practice.</p></div>
           </div>
-          <div class="border border-slate-800 bg-panel-dark p-6 space-y-2">
-            <h4 class="text-white font-semibold text-sm">Agnostic Software Integration</h4>
-            <p class="text-xs text-slate-400 leading-relaxed">Seamless data script optimization executing directly inside your existing EMR, PM, and records infrastructure.</p>
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-teal/10 flex items-center justify-center">
+              <svg class="w-5 h-5 fill-brand-teal" viewBox="0 0 24 24"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14z"/></svg>
+            </div>
+            <div><h4 class="font-bold text-brand-navy text-[14px]">Technology Solutions</h4><p class="text-[12px] text-slate-500 mt-1 font-light">Seamless integration with your EMR and PM software.</p></div>
           </div>
-          <div class="border border-slate-800 bg-panel-dark p-6 space-y-2">
-            <h4 class="text-white font-semibold text-sm">Regulatory Adaptation Loops</h4>
-            <p class="text-xs text-slate-400 leading-relaxed">Continuous code parsing adjustments that protect your baseline distributions from changing commercial processing requirements.</p>
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-teal/10 flex items-center justify-center">
+              <svg class="w-5 h-5 fill-brand-teal" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+            </div>
+            <div><h4 class="font-bold text-brand-navy text-[14px]">Industry Adaptation</h4><p class="text-[12px] text-slate-500 mt-1 font-light">Real-time updates to coding rules and payer requirements.</p></div>
           </div>
-          <div class="border border-slate-800 bg-panel-dark p-6 space-y-2">
-            <h4 class="text-white font-semibold text-sm">Advanced Practice Reporting</h4>
-            <p class="text-xs text-slate-400 leading-relaxed">Detailed, clear metrics dashboards mapping transaction histories, tracking leakage trends, and confirming collections lifts.</p>
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-teal/10 flex items-center justify-center">
+              <svg class="w-5 h-5 fill-brand-teal" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+            </div>
+            <div><h4 class="font-bold text-brand-navy text-[14px]">Advanced Analytics</h4><p class="text-[12px] text-slate-500 mt-1 font-light">Clear dashboards tracking collections and denial trends.</p></div>
           </div>
         </div>
+        <a href="/our-company/" class="inline-flex items-center gap-2 bg-brand-navy text-white text-[13px] font-bold uppercase tracking-wider px-8 py-4 hover:bg-brand-teal hover:text-brand-navy transition-all duration-300">
+          Learn About ZettaRCM <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </a>
       </div>
-
-      <div id="benchmarks" class="lg:col-span-5 bg-panel-dark border border-slate-800 p-8 font-mono shadow-xl relative">
-        <h3 class="text-xs text-slate-400 mb-6 uppercase tracking-wider">Comparative Metric Stability Matrix</h3>
-        <div class="space-y-4 text-xs">
-          <div class="flex justify-between border-b border-slate-800/60 pb-3">
-            <span class="text-slate-500">FIRST-PASS CLAIM RECOVERY</span>
-            <span class="text-accent-green font-bold">ZETTA: 99.2% | IND: 82%</span>
-          </div>
-          <div class="flex justify-between border-b border-slate-800/60 pb-3">
-            <span class="text-slate-500">AVERAGE PROCESSING LIFECYCLE</span>
-            <span class="text-white font-bold">ZETTA: &lt;30 DAYS | IND: 45 DAYS</span>
-          </div>
-          <div class="flex justify-between border-b border-slate-800/60 pb-3">
-            <span class="text-slate-500">SYSTEM REJECTION RATIOS</span>
-            <span class="text-brand-teal font-bold">ZETTA: &lt;1.8% | IND: 9.2%</span>
-          </div>
-          <div class="flex justify-between pt-2">
-            <span class="text-slate-500">AVERAGE MARGIN VELOCITY INCREASES</span>
-            <span class="text-white font-bold">+32% LIFT</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <section id="domains" class="px-6 py-24 bg-[#0F1420] border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-      
-      <div class="lg:col-span-5 space-y-4">
-        <span class="text-xs font-semibold tracking-wider text-brand-teal block uppercase">Geographic Deployment Index</span>
-        <h2 class="text-3xl md:text-4xl font-light text-white tracking-tight">National Scale. Local Payer Precision.</h2>
-        <p class="text-sm text-slate-400 leading-relaxed font-light">
-          Payer systems vary metrics by state lines. ZettaRCM maps processing scripts matching local validation parameters across New York, Texas, New Jersey, and expanding regional corridors.
-        </p>
-      </div>
-
-      <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-2 font-mono text-[11px]">
-        <div class="border border-slate-800 bg-panel-dark/80 p-4">
-          <div class="text-white font-bold">BUFFALO</div>
-          <div class="text-slate-500 mt-1">HUB_SYS: NY_02</div>
-        </div>
-        <div class="border border-slate-800 bg-panel-dark/80 p-4">
-          <div class="text-white font-bold">ROCHESTER</div>
-          <div class="text-slate-500 mt-1">HUB_SYS: NY_05</div>
-        </div>
-        <div class="border border-slate-800 bg-panel-dark/80 p-4">
-          <div class="text-white font-bold">SYRACUSE</div>
-          <div class="text-slate-500 mt-1">HUB_SYS: NY_11</div>
-        </div>
-        <div class="border border-slate-800 bg-panel-dark/80 p-4">
-          <div class="text-white font-bold">WHITE PLAINS</div>
-          <div class="text-slate-500 mt-1">HUB_SYS: NY_24</div>
-        </div>
-      </div>
-
+  <!-- STATS -->
+  <section class="bg-brand-navy py-14 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10">
+      <div class="bg-brand-navy p-10 text-center"><div class="text-4xl font-bold text-brand-teal mb-2">99.2%</div><div class="text-[12px] text-slate-400 uppercase tracking-wider">First-Pass Claim Rate</div></div>
+      <div class="bg-brand-navy p-10 text-center"><div class="text-4xl font-bold text-white mb-2">+30%</div><div class="text-[12px] text-slate-400 uppercase tracking-wider">Average Revenue Increase</div></div>
+      <div class="bg-brand-navy p-10 text-center"><div class="text-4xl font-bold text-brand-teal mb-2">35+</div><div class="text-[12px] text-slate-400 uppercase tracking-wider">Medical Specialties Served</div></div>
+      <div class="bg-brand-navy p-10 text-center"><div class="text-4xl font-bold text-white mb-2">24/7</div><div class="text-[12px] text-slate-400 uppercase tracking-wider">Practice Support Available</div></div>
     </div>
   </section>
 
-  <section class="px-6 py-24 bg-obsidian border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-      
-      <div class="lg:col-span-6 space-y-6">
-        <span class="text-xs font-semibold text-accent-green tracking-wider block uppercase">Relentless Auditing Protocols</span>
-        <h2 class="text-3xl md:text-5xl font-light text-white tracking-tight">Continuous Practice Operations Overwatch</h2>
-        <p class="text-sm text-slate-400 leading-relaxed font-light">
-          Our transaction tracking arrays execute continuous monitoring rounds across data sets. This ensures claim lines remain active, moves past manual bottlenecks, and completely shifts administrative workloads off internal healthcare staff.
-        </p>
+  <!-- SPECIALTIES -->
+  <section id="specialties" class="py-20 px-6 bg-slate-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-[11px] font-bold tracking-widest text-brand-teal uppercase block mb-3">Medical Specialties</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-navy">Billing Solutions for Every Specialty</h2>
+        <p class="text-[15px] text-slate-500 mt-4 font-light">We know that healthcare specialties are as unique as the patients they serve.</p>
       </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5">
+        <a href="/specialties/mental-health/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Mental Health</a>
+        <a href="/specialties/radiology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Radiology</a>
+        <a href="/specialties/cardiology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Cardiology</a>
+        <a href="/specialties/neurology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Neurology</a>
+        <a href="/specialties/neurosurgery/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Neurosurgery</a>
+        <a href="/specialties/dermatology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Dermatology</a>
+        <a href="/specialties/rehabilitation/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Rehabilitation</a>
+        <a href="/specialties/allergy-immunology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Allergy & Immunology</a>
+        <a href="/specialties/pediatrics/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Pediatrics</a>
+        <a href="/specialties/nephrology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Nephrology</a>
+        <a href="/specialties/ophthalmology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Ophthalmology</a>
+        <a href="/specialties/geriatrics/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Geriatrics</a>
+        <a href="/specialties/podiatry/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Podiatry</a>
+        <a href="/specialties/endocrinology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Endocrinology</a>
+        <a href="/specialties/wound-care/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Wound Care</a>
+        <a href="/specialties/oncology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Oncology</a>
+        <a href="/specialties/pain-management/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Pain Management</a>
+        <a href="/specialties/anesthesia/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Anesthesia</a>
+        <a href="/specialties/gastroenterology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Gastroenterology</a>
+        <a href="/specialties/pathology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Pathology</a>
+        <a href="/specialties/family-practice/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Family Practice</a>
+        <a href="/specialties/urgent-care/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Urgent Care</a>
+        <a href="/specialties/general-surgery/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">General Surgery</a>
+        <a href="/specialties/orthopedics/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Orthopedics</a>
+        <a href="/specialties/pulmonology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Pulmonology</a>
+        <a href="/specialties/internal-medicine/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Internal Medicine</a>
+        <a href="/specialties/hematology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Hematology</a>
+        <a href="/specialties/dental/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Dental</a>
+        <a href="/specialties/chiropractic/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Chiropractic</a>
+        <a href="/specialties/ob-gyn/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">OB/GYN</a>
+        <a href="/specialties/urology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Urology</a>
+        <a href="/specialties/rheumatology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Rheumatology</a>
+        <a href="/specialties/neonatology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Neonatology</a>
+        <a href="/specialties/audiology/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Audiology</a>
+        <a href="/specialties/infectious-disease/" class="bg-white border border-slate-200 px-4 py-4 text-center text-[13px] text-slate-600 font-medium hover:border-brand-teal hover:text-brand-teal hover:bg-white transition-all">Infectious Disease</a>
+      </div>
+      <div class="text-center mt-8">
+        <a href="/specialties/" class="inline-flex items-center gap-2 border border-slate-300 text-slate-600 text-[13px] font-semibold uppercase tracking-wider px-10 py-4 hover:border-brand-teal hover:text-brand-teal transition-all">View All 35 Specialties <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+      </div>
+    </div>
+  </section>
 
-      <div class="lg:col-span-6 bg-panel-dark border border-slate-800 p-8 shadow-xl">
-        <h4 class="text-xs font-mono font-bold tracking-wider text-white uppercase mb-4">Quick Interval Consultation Gateway</h4>
-        <form class="space-y-4" onsubmit="event.preventDefault();">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input type="text" placeholder="Authorized Full Name" class="w-full bg-obsidian border border-slate-800 text-slate-200 text-xs p-3.5 outline-none focus:border-brand-teal">
-            <input type="email" placeholder="Secure Email Line" class="w-full bg-obsidian border border-slate-800 text-slate-200 text-xs p-3.5 outline-none focus:border-brand-teal">
+  <!-- WHY CHOOSE US + IMAGE -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div class="space-y-6">
+        <div>
+          <span class="text-[11px] font-bold tracking-widest text-brand-teal uppercase block mb-3">Why ZettaRCM</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-navy leading-tight">Why Choose Us Over Anyone Else?</h2>
+        </div>
+        <div class="space-y-3">
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal hover:shadow-sm transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-navy flex items-center justify-center">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div><h3 class="text-brand-navy font-bold text-[14px] mb-1">Specialty-Specific Expertise</h3><p class="text-[13px] text-slate-500 font-light leading-relaxed">Every practice gets a team trained specifically in their specialty's coding, payer rules, and compliance requirements.</p></div>
           </div>
-          <button class="w-full bg-[#171E2E] border border-slate-700 text-brand-teal font-mono text-xs font-semibold uppercase tracking-widest py-4 hover:border-brand-teal hover:bg-obsidian transition-all duration-300 cursor-pointer">
-            Lock Consultation Window →
-          </button>
-        </form>
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal hover:shadow-sm transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-navy flex items-center justify-center">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M13 2.05V4.05C17.39 4.59 20.5 8.58 19.96 12.97C19.5 16.61 16.64 19.5 13 19.93V21.93C18.5 21.38 22.5 16.5 21.95 11C21.5 6.25 17.73 2.5 13 2.05M11 2.06C9.05 2.25 7.19 3 5.67 4.26L7.1 5.74C8.22 4.84 9.57 4.26 11 4.06V2.06M4.26 5.67C3 7.19 2.25 9.04 2.05 11H4.05C4.24 9.58 4.8 8.23 5.69 7.1L4.26 5.67M2.06 13C2.26 14.96 3.03 16.81 4.27 18.33L5.69 16.9C4.81 15.77 4.24 14.42 4.06 13H2.06M7.1 18.37L5.67 19.74C7.18 21 9.04 21.79 11 22V20C9.58 19.82 8.23 19.25 7.1 18.37M12 7L8 11H11V16H13V11H16L12 7Z"/></svg>
+            </div>
+            <div><h3 class="text-brand-navy font-bold text-[14px] mb-1">Faster Claim Turnaround</h3><p class="text-[13px] text-slate-500 font-light leading-relaxed">We submit claims within 24 hours and reduce your payment cycle from 45+ days to under 30 days.</p></div>
+          </div>
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal hover:shadow-sm transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-navy flex items-center justify-center">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+            </div>
+            <div><h3 class="text-brand-navy font-bold text-[14px] mb-1">100% HIPAA Compliant</h3><p class="text-[13px] text-slate-500 font-light leading-relaxed">Every process and team member meets full HIPAA standards. Your patient data is always protected and encrypted.</p></div>
+          </div>
+          <div class="flex gap-4 p-5 border border-slate-100 hover:border-brand-teal hover:shadow-sm transition-all">
+            <div class="shrink-0 w-10 h-10 bg-brand-navy flex items-center justify-center">
+              <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+            </div>
+            <div><h3 class="text-brand-navy font-bold text-[14px] mb-1">Transparent Reporting</h3><p class="text-[13px] text-slate-500 font-light leading-relaxed">Real-time dashboards and monthly reports so you always know exactly how your revenue is performing.</p></div>
+          </div>
+        </div>
       </div>
-
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=85&fit=crop" alt="Medical billing team" class="w-full h-[540px] object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-brand-teal p-6 flex items-center gap-4">
+          <svg class="w-8 h-8 fill-brand-navy shrink-0" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          <div>
+            <div class="text-brand-navy font-bold text-[18px]">(800) 516-0192</div>
+            <div class="text-brand-navy/70 text-[12px]">Available 24/7 for your practice</div>
+          </div>
+          <a href="tel:+18005160192" class="ml-auto bg-brand-navy text-white text-[12px] font-bold uppercase tracking-wider px-6 py-3 hover:bg-white hover:text-brand-navy transition-all whitespace-nowrap">Call Now</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="proposal" class="px-6 py-24 bg-[#0F1420] border-b border-slate-800/80">
-    <div class="max-w-4xl mx-auto bg-panel-dark border border-slate-700 p-8 shadow-2xl relative font-mono">
-      <h3 class="text-lg font-bold text-white uppercase mb-1">Security Encrypted Proposal Generator</h3>
-      <p class="text-xs text-slate-400 mb-6 uppercase">Direct Routing Node via 256-Bit Data Transfer Protocol</p>
-      
-      <form class="grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="event.preventDefault();">
-        <input type="text" placeholder="Personnel First & Last Name" class="bg-obsidian border border-slate-800 text-slate-200 text-xs p-3.5 outline-none focus:border-brand-teal">
-        <input type="email" placeholder="Secure Corporate Email Address" class="bg-obsidian border border-slate-800 text-slate-200 text-xs p-3.5 outline-none focus:border-brand-teal">
-        <select class="bg-obsidian border border-slate-800 text-slate-300 text-xs p-3.5 outline-none focus:brand-teal cursor-pointer">
-          <option>Expected Monthly Claims Processing Scale</option>
-          <option>Scale Tier 1: Under $50,000 / month</option>
-          <option>Scale Tier 2: $50,000 - $250,000 / month</option>
-          <option>Scale Tier 3: Enterprise Over $250,000 / month</option>
-        </select>
-        <select class="bg-obsidian border border-slate-800 text-slate-300 text-xs p-3.5 outline-none focus:brand-teal cursor-pointer">
-          <option>Targeted Regional Network Deployment Hub</option>
-          <option>New York Payer Corridor</option>
-          <option>Texas Payer Corridor</option>
-          <option>National Processing Array</option>
-        </select>
-        <textarea placeholder="Specify unique platform infrastructure dependencies or current operational friction points..." class="md:col-span-2 bg-brand-teal text-obsidian text-xs p-3.5 outline-none focus:border-brand-teal h-24 resize-none"></textarea>
-        <button class="md:col-span-2 bg-brand-teal text-obsidian text-xs font-bold uppercase tracking-widest py-4 hover:bg-white hover:text-obsidian transition-all duration-300 cursor-pointer">
-          Transmit Specifications for Immediate Allocation Analysis →
-        </button>
-      </form>
+  <!-- TESTIMONIALS -->
+  <section class="py-20 px-6 bg-slate-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-[11px] font-bold tracking-widest text-brand-teal uppercase block mb-3">Client Testimonials</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-navy">What Our Clients Say</h2>
+        <div class="flex items-center justify-center gap-1 mt-3">
+          <span class="text-yellow-400 text-lg">★★★★★</span>
+          <span class="text-slate-500 text-[13px] ml-2">5.0 on Google Reviews</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white border border-slate-200 p-8 space-y-5 hover:border-brand-teal hover:shadow-md transition-all">
+          <div class="text-yellow-400">★★★★★</div>
+          <p class="text-[14px] text-slate-600 leading-relaxed font-light italic">"ZettaRCM has completely transformed our billing process. Our collections increased by over 30% in the first three months. Their team is incredibly knowledgeable and responsive."</p>
+          <div class="pt-4 border-t border-slate-100">
+            <div class="text-brand-navy font-bold text-[13px]">Dr. Michael R.</div>
+            <div class="text-slate-400 text-[12px]">Cardiologist, New York</div>
+          </div>
+        </div>
+        <div class="bg-white border border-slate-200 p-8 space-y-5 hover:border-brand-teal hover:shadow-md transition-all">
+          <div class="text-yellow-400">★★★★★</div>
+          <p class="text-[14px] text-slate-600 leading-relaxed font-light italic">"I've worked with several billing companies. ZettaRCM is the only one that actually delivers. Our denial rate dropped from 18% to under 2% within 60 days."</p>
+          <div class="pt-4 border-t border-slate-100">
+            <div class="text-brand-navy font-bold text-[13px]">Dr. Sarah K.</div>
+            <div class="text-slate-400 text-[12px]">Mental Health Practice, Brooklyn</div>
+          </div>
+        </div>
+        <div class="bg-white border border-slate-200 p-8 space-y-5 hover:border-brand-teal hover:shadow-md transition-all">
+          <div class="text-yellow-400">★★★★★</div>
+          <p class="text-[14px] text-slate-600 leading-relaxed font-light italic">"The credentialing process used to take months. ZettaRCM had us enrolled with all major payers in weeks. Their expertise is unmatched. Highly recommend."</p>
+          <div class="pt-4 border-t border-slate-100">
+            <div class="text-brand-navy font-bold text-[13px]">Practice Administrator</div>
+            <div class="text-slate-400 text-[12px]">Multi-Provider Group, Queens</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="#" class="inline-flex items-center gap-2 border border-slate-300 text-slate-600 text-[13px] font-semibold uppercase tracking-wider px-8 py-4 hover:border-brand-teal hover:text-brand-teal transition-all">Read More Reviews on Google <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+      </div>
     </div>
   </section>
 
-  <!-- CORPORATE DIRECTORY FOOTER -->
-  <footer class="bg-[#070A12] border-t border-slate-800/80 py-20 px-6 font-mono text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+  <!-- BLOG / RESOURCES -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-10">
+        <div>
+          <span class="text-[11px] font-bold tracking-widest text-brand-teal uppercase block mb-3">ZettaRCM Resources</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-navy">Latest Insights & Updates</h2>
+        </div>
+        <a href="/resources/blog/" class="hidden sm:flex items-center gap-2 text-brand-teal text-[13px] font-semibold hover:text-brand-navy transition-colors">View All Articles <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/resources/blog/" class="group border border-slate-200 hover:border-brand-teal hover:shadow-md transition-all overflow-hidden">
+          <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80&fit=crop" alt="Medical billing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+          <div class="p-6 space-y-2">
+            <span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">Medical Billing</span>
+            <h3 class="text-[15px] font-bold text-brand-navy leading-tight group-hover:text-brand-teal transition-colors">Understanding Patient Billing Statements: A Guide for Healthcare Providers</h3>
+            <p class="text-[13px] text-slate-500 font-light leading-relaxed">Learn how transparent patient billing improves collection rates and patient satisfaction.</p>
+          </div>
+        </a>
+        <a href="/resources/blog/" class="group border border-slate-200 hover:border-brand-teal hover:shadow-md transition-all overflow-hidden">
+          <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=600&q=80&fit=crop" alt="Denial management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+          <div class="p-6 space-y-2">
+            <span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">Denial Management</span>
+            <h3 class="text-[15px] font-bold text-brand-navy leading-tight group-hover:text-brand-teal transition-colors">Top 5 Denial Management Tools Every Practice Needs in 2025</h3>
+            <p class="text-[13px] text-slate-500 font-light leading-relaxed">The most effective strategies to reduce claim denials and recover lost revenue.</p>
+          </div>
+        </a>
+        <a href="/resources/blog/" class="group border border-slate-200 hover:border-brand-teal hover:shadow-md transition-all overflow-hidden">
+          <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80&fit=crop" alt="Medical coding" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>
+          <div class="p-6 space-y-2">
+            <span class="text-[11px] font-bold text-brand-teal uppercase tracking-wider">Medical Coding</span>
+            <h3 class="text-[15px] font-bold text-brand-navy leading-tight group-hover:text-brand-teal transition-colors">2025 CPT Code Updates: What Your Practice Needs to Know</h3>
+            <p class="text-[13px] text-slate-500 font-light leading-relaxed">Stay current with the latest CPT code changes and how they impact reimbursement rates.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="py-14 px-6 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-8">Certified & Compliant</div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="bg-white border border-slate-200 px-8 py-5 hover:border-brand-teal transition-all"><div class="text-brand-navy font-bold text-[15px]">HIPAA</div><div class="text-slate-400 text-[11px] mt-1">Fully Compliant</div></div>
+        <div class="bg-white border border-slate-200 px-8 py-5 hover:border-brand-teal transition-all"><div class="text-brand-teal font-bold text-[15px]">AAPC</div><div class="text-slate-400 text-[11px] mt-1">Certified Coders</div></div>
+        <div class="bg-white border border-slate-200 px-8 py-5 hover:border-brand-teal transition-all"><div class="text-brand-navy font-bold text-[15px]">CMS</div><div class="text-slate-400 text-[11px] mt-1">Guidelines Compliant</div></div>
+        <div class="bg-white border border-slate-200 px-8 py-5 hover:border-brand-teal transition-all"><div class="text-brand-navy font-bold text-[15px]">NY STATE</div><div class="text-slate-400 text-[11px] mt-1">Dept of Health</div></div>
+        <div class="bg-white border border-slate-200 px-8 py-5 hover:border-brand-teal transition-all"><div class="text-brand-navy font-bold text-[15px]">ICD-10</div><div class="text-slate-400 text-[11px] mt-1">Certified Standards</div></div>
+        <div class="bg-white border border-slate-200 px-8 py-5 hover:border-brand-teal transition-all"><div class="text-brand-navy font-bold text-[15px]">DMCA</div><div class="text-slate-400 text-[11px] mt-1">Protected</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-navy pt-16 pb-8 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <div class="lg:col-span-2 space-y-5">
+        <div>
+          <div class="text-white font-bold text-2xl">Zetta<span class="text-brand-teal">RCM</span></div>
+          <div class="text-[9px] text-slate-500 tracking-[0.25em] uppercase mt-0.5">Revenue Cycle Management</div>
+        </div>
+        <p class="text-[13px] text-slate-400 leading-relaxed font-light">ZettaRCM is an industry leader with innovative technology and an expert team. We are a complete Revenue Cycle Management solution that streamlines reimbursements and delivers remarkable results nationwide.</p>
+        <div class="space-y-2 text-[13px] text-slate-400">
+          <div>134 N 4th St, Brooklyn, NY 11249</div>
+          <div><a href="tel:+18005160192" class="hover:text-brand-teal transition-colors">(800) 516-0192</a> &nbsp;|&nbsp; <a href="tel:+17183030192" class="hover:text-brand-teal transition-colors">(718) 303-0192</a></div>
+          <div><a href="mailto:info@zettarcm.com" class="hover:text-brand-teal transition-colors">info@zettarcm.com</a></div>
+        </div>
+        <div class="flex gap-2">
+          <a href="#" class="w-9 h-9 border border-slate-700 flex items-center justify-center text-slate-500 hover:border-brand-teal hover:text-brand-teal transition-all text-[12px] font-bold">in</a>
+          <a href="#" class="w-9 h-9 border border-slate-700 flex items-center justify-center text-slate-500 hover:border-brand-teal hover:text-brand-teal transition-all text-[12px] font-bold">f</a>
+          <a href="#" class="w-9 h-9 border border-slate-700 flex items-center justify-center text-slate-500 hover:border-brand-teal hover:text-brand-teal transition-all text-[12px] font-bold">X</a>
+          <a href="#" class="w-9 h-9 border border-slate-700 flex items-center justify-center text-slate-500 hover:border-brand-teal hover:text-brand-teal transition-all text-[12px] font-bold">P</a>
+        </div>
+      </div>
       <div class="space-y-4">
-        <div class="text-white font-bold text-sm tracking-wide">Zetta<span class="text-brand-teal">RCM</span></div>
-        <p class="text-[11px] text-slate-600 leading-relaxed font-sans font-light normal-case">High-velocity enterprise platform infrastructure delivering structural medical ledger auditing, data validation data streams, and complete revenue cycle optimization across nationwide medical networks.</p>
-        <div class="flex space-x-2 text-slate-400 text-[10px]">
-          <span class="border border-slate-800 px-2.5 py-1 bg-obsidian">SYSTEM_ACTIVE</span>
-          <span class="border border-slate-800 px-2.5 py-1 bg-obsidian">SECURE_GATEWAY</span>
-        </div>
-      </div>
-      <div>
-        <div class="text-slate-300 font-semibold tracking-wider mb-4 uppercase">Active Operations</div>
-        <ul class="space-y-2 text-[11px]">
-          <li><a href="#services" class="hover:text-brand-teal transition-colors">Revenue Cycle Automation</a></li>
-          <li><a href="#services" class="hover:text-brand-teal transition-colors">Sovereign Provider Credentialing</a></li>
-          <li><a href="/medical-coding-services/" class="hover:text-brand-teal transition-colors">Certified Code Scrubbing</a></li>
-          <li><a href="#services" class="hover:text-brand-teal transition-colors">Proactive Denial Appeals</a></li>
+        <div class="text-white font-bold text-[13px] uppercase tracking-wider border-b border-slate-700 pb-3">Our Services</div>
+        <ul class="space-y-2.5 text-[13px] text-slate-400">
+          <li><a href="/services/medical-billing/" class="hover:text-brand-teal transition-colors">Medical Billing</a></li>
+          <li><a href="/services/medical-credentialing/" class="hover:text-brand-teal transition-colors">Medical Credentialing</a></li>
+          <li><a href="/services/medical-coding/" class="hover:text-brand-teal transition-colors">Medical Coding</a></li>
+          <li><a href="/services/denial-management/" class="hover:text-brand-teal transition-colors">Denial Management</a></li>
+          <li><a href="/services/ar-follow-up/" class="hover:text-brand-teal transition-colors">A/R Follow Up</a></li>
+          <li><a href="/services/out-of-network-billing/" class="hover:text-brand-teal transition-colors">Out of Network Billing</a></li>
+          <li><a href="/services/prior-authorization/" class="hover:text-brand-teal transition-colors">Prior Authorization</a></li>
+          <li><a href="/services/" class="text-brand-teal font-medium hover:text-white transition-colors">View All Services →</a></li>
         </ul>
       </div>
-      <div>
-        <div class="text-slate-300 font-semibold tracking-wider mb-4 uppercase">System Directories</div>
-        <ul class="space-y-2 text-[11px]">
-          <li><a href="/our-company/" class="hover:text-brand-teal transition-colors">Platform Infrastructure Specs</a></li>
-          <li><a href="#specialties" class="hover:text-brand-teal transition-colors">Clinical Specialization Hub</a></li>
+      <div class="space-y-4">
+        <div class="text-white font-bold text-[13px] uppercase tracking-wider border-b border-slate-700 pb-3">About Us</div>
+        <ul class="space-y-2.5 text-[13px] text-slate-400">
+          <li><a href="/our-company/" class="hover:text-brand-teal transition-colors">Our Company</a></li>
+          <li><a href="/specialties/" class="hover:text-brand-teal transition-colors">Specialties</a></li>
+          <li><a href="/resources/newsroom/" class="hover:text-brand-teal transition-colors">Newsroom</a></li>
+          <li><a href="/resources/case-studies/" class="hover:text-brand-teal transition-colors">Case Studies</a></li>
+          <li><a href="/resources/blog/" class="hover:text-brand-teal transition-colors">Blog</a></li>
+          <li><a href="/contact/" class="hover:text-brand-teal transition-colors">Contact Us</a></li>
           <li><a href="/privacy-policy/" class="hover:text-brand-teal transition-colors">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions/" class="hover:text-brand-teal transition-colors">Terms and Conditions</a></li>
+          <li><a href="/terms-and-conditions/" class="hover:text-brand-teal transition-colors">Terms & Conditions</a></li>
         </ul>
       </div>
-      <div>
-        <div class="text-slate-300 font-semibold tracking-wider mb-4 uppercase">Context Routing</div>
-        <p class="text-[11px] leading-relaxed text-slate-600 font-light">
-          SYS_LOC: 350 Fifth Ave, Suite 4800, New York, NY 10118<br>
-          SECURE_TEL: (800) 555-0192<br>
-          SECURE_EML: info@zettarcm.com
-        </p>
+      <div class="space-y-4">
+        <div class="text-white font-bold text-[13px] uppercase tracking-wider border-b border-slate-700 pb-3">Quick Connect</div>
+        <p class="text-[13px] text-slate-400 font-light leading-relaxed">Get a free practice audit and discover how much revenue you're leaving on the table.</p>
+        <a href="#quote" class="bg-brand-teal text-brand-navy font-bold text-[12px] uppercase tracking-wider px-5 py-3 block text-center hover:bg-white transition-all">Free Practice Audit</a>
+        <a href="tel:+18005160192" class="border border-slate-700 text-slate-400 text-[12px] px-5 py-3 block text-center hover:border-brand-teal hover:text-brand-teal transition-all">(800) 516-0192</a>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center text-[10px] tracking-wide text-slate-700">
-      <span>© 2026 ZETTA RCM PLATFORMS SYSTEMS INC. ALL DATA TRANSFERS FULLY REGISTERED UNDER NATIONWIDE COMPLIANCE LAWS.</span>
-      <div class="flex space-x-6 mt-4 sm:mt-0">
-        <a href="/privacy-policy/" class="hover:text-slate-400">PRIVACY_MANIFEST</a>
-        <a href="/terms-and-conditions/" class="hover:text-slate-400">TERMS_OF_TRANSMISSION</a>
+    <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-[12px] text-slate-600 gap-3">
+      <span>© 2026, ZettaRCM, Inc. All Rights Reserved.</span>
+      <div class="flex gap-5">
+        <a href="/privacy-policy/" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+        <a href="/terms-and-conditions/" class="hover:text-slate-400 transition-colors">Terms & Conditions</a>
+        <a href="/contact/" class="hover:text-slate-400 transition-colors">Contact Us</a>
       </div>
     </div>
   </footer>
