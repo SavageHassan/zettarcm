@@ -144,8 +144,115 @@
     <button class="hidden lg:flex items-center justify-center w-11 h-11 hover:bg-[#00B8D4] transition-colors shrink-0" style="background:#1B3A6B">
       <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
     </button>
+    <button id="zmb" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px]" aria-label="Toggle menu">
+      <span class="zmbl block w-6 h-[2px] transition-all duration-300" style="background:#1B3A6B"></span>
+      <span class="zmbl block w-6 h-[2px] transition-all duration-300" style="background:#1B3A6B"></span>
+      <span class="zmbl block w-6 h-[2px] transition-all duration-300" style="background:#1B3A6B"></span>
+    </button>
   </div>
 </header>
+<div id="zmenu" style="display:none;position:sticky;top:72px;z-index:49" class="lg:hidden bg-white border-b border-slate-200 shadow-lg overflow-y-auto max-h-[80vh]">
+  <div class="px-4 py-2">
+    <a href="/" class="block py-3 px-2 text-[14px] font-semibold border-b border-slate-100" style="color:#1B3A6B">Home</a>
+    <div class="border-b border-slate-100">
+      <button onclick="ztog(this)" class="w-full flex justify-between items-center py-3 px-2 text-[14px] font-semibold" style="color:#1B3A6B">Why ZettaRCM<svg class="w-4 h-4 fill-current transition-transform duration-200" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+      <div class="zmsub pb-2 pl-3" style="display:none">
+        <a href="/our-company/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Our Company</a>
+        <a href="/nationwide-medical-billing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Nationwide Medical Billing</a>
+      </div>
+    </div>
+    <div class="border-b border-slate-100">
+      <button onclick="ztog(this)" class="w-full flex justify-between items-center py-3 px-2 text-[14px] font-semibold" style="color:#1B3A6B">Services<svg class="w-4 h-4 fill-current transition-transform duration-200" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+      <div class="zmsub pb-2 pl-3" style="display:none">
+        <a href="/services/medical-billing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Medical Billing</a>
+        <a href="/services/medical-credentialing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Medical Credentialing</a>
+        <a href="/services/medical-coding/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Medical Coding</a>
+        <a href="/services/denial-management/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Denial Management</a>
+        <a href="/services/ar-follow-up/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">A/R Follow Up</a>
+        <a href="/services/revenue-cycle-management/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Revenue Cycle Management</a>
+        <a href="/services/prior-authorization/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Prior Authorization</a>
+        <a href="/services/out-of-network-billing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Out of Network Billing</a>
+        <a href="/services/eligibility-verification/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Eligibility Verification</a>
+        <a href="/services/front-office-management/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Front Office Management</a>
+        <a href="/services/patient-billing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Patient Billing</a>
+        <a href="/services/payment-posting/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Payment Posting</a>
+        <a href="/services/telemedicine-billing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Telemedicine Billing</a>
+        <a href="/services/charge-entry/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Charge Entry</a>
+        <a href="/services/practice-management/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Practice Management</a>
+        <a href="/services/quality-payment-program/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Quality Payment Program</a>
+        <a href="/services/ehr-implementation/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">EHR Implementation</a>
+        <a href="/services/healthcare-staffing/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Healthcare Staffing</a>
+        <a href="/services/" class="block py-2 px-3 text-[13px] font-semibold" style="color:#00B8D4">View All Services →</a>
+      </div>
+    </div>
+    <div class="border-b border-slate-100">
+      <button onclick="ztog(this)" class="w-full flex justify-between items-center py-3 px-2 text-[14px] font-semibold" style="color:#1B3A6B">Specialties<svg class="w-4 h-4 fill-current transition-transform duration-200" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+      <div class="zmsub pb-2 pl-3" style="display:none">
+        <a href="/specialties/mental-health/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Mental Health</a>
+        <a href="/specialties/cardiology/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Cardiology</a>
+        <a href="/specialties/radiology/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Radiology</a>
+        <a href="/specialties/orthopedics/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Orthopedics</a>
+        <a href="/specialties/oncology/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Oncology</a>
+        <a href="/specialties/neurology/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Neurology</a>
+        <a href="/specialties/dermatology/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Dermatology</a>
+        <a href="/specialties/pain-management/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Pain Management</a>
+        <a href="/specialties/pediatrics/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Pediatrics</a>
+        <a href="/specialties/ob-gyn/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">OB/GYN</a>
+        <a href="/specialties/" class="block py-2 px-3 text-[13px] font-semibold" style="color:#00B8D4">View All 35 Specialties →</a>
+      </div>
+    </div>
+    <div class="border-b border-slate-100">
+      <button onclick="ztog(this)" class="w-full flex justify-between items-center py-3 px-2 text-[14px] font-semibold" style="color:#1B3A6B">Domain Areas<svg class="w-4 h-4 fill-current transition-transform duration-200" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+      <div class="zmsub pb-2 pl-3" style="display:none">
+        <a href="/domain-areas/revenue-partners/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Revenue Partners</a>
+        <a href="/domain-areas/premier-billing-state/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Premier Billing State</a>
+        <a href="/domain-areas/pioneer-states-hub/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Pioneer States Hub</a>
+        <a href="/domain-areas/city-zones/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">City Zones</a>
+        <a href="/domain-areas/" class="block py-2 px-3 text-[13px] font-semibold" style="color:#00B8D4">View All Areas →</a>
+      </div>
+    </div>
+    <div class="border-b border-slate-100">
+      <button onclick="ztog(this)" class="w-full flex justify-between items-center py-3 px-2 text-[14px] font-semibold" style="color:#1B3A6B">Resources<svg class="w-4 h-4 fill-current transition-transform duration-200" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
+      <div class="zmsub pb-2 pl-3" style="display:none">
+        <a href="/resources/blog/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Blog</a>
+        <a href="/resources/faqs/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">FAQs</a>
+        <a href="/resources/case-studies/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Case Studies</a>
+        <a href="/resources/rcm-library/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">RCM Library</a>
+        <a href="/resources/newsroom/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Newsroom</a>
+        <a href="/resources/provider-form/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Provider Form</a>
+        <a href="/resources/insurance-partners/" class="block py-2 px-3 text-[13px] text-slate-600 hover:text-[#00B8D4]">Insurance Partners</a>
+      </div>
+    </div>
+    <a href="/contact/" class="block py-3 px-2 text-[14px] font-semibold border-b border-slate-100" style="color:#1B3A6B">Contact Us</a>
+    <div class="py-3 flex flex-col gap-2">
+      <a href="/make-a-payment/" class="block text-center py-2.5 text-[13px] font-semibold text-white rounded" style="background:#1B3A6B">Make A Payment</a>
+      <a href="/#quote" class="block text-center py-2.5 text-[13px] font-semibold text-white rounded" style="background:#00B8D4">Free Practice Audit</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var btn=document.getElementById('zmb');
+  var menu=document.getElementById('zmenu');
+  var lines=btn?btn.querySelectorAll('.zmbl'):[];
+  if(!btn||!menu)return;
+  btn.addEventListener('click',function(){
+    var open=menu.style.display==='block';
+    menu.style.display=open?'none':'block';
+    lines[0].style.transform=open?'':'rotate(45deg) translate(5px,5px)';
+    lines[1].style.opacity=open?'1':'0';
+    lines[2].style.transform=open?'':'rotate(-45deg) translate(5px,-5px)';
+  });
+})();
+function ztog(btn){
+  var sub=btn.nextElementSibling;
+  var svg=btn.querySelector('svg');
+  var isOpen=sub.style.display==='block';
+  document.querySelectorAll('.zmsub').forEach(function(el){el.style.display='none';});
+  document.querySelectorAll('#zmenu button svg').forEach(function(el){el.style.transform='';});
+  if(!isOpen){sub.style.display='block';if(svg)svg.style.transform='rotate(180deg)';}
+}
+</script>
   <section class="bg-brand-navy py-14 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-[11px] text-slate-400 uppercase tracking-wider mb-3"><a href="/" class="hover:text-brand-teal transition-colors">Home</a> <span class="mx-2">/</span> <a href="/specialties/" class="hover:text-brand-teal">Specialties</a> <span class="mx-2">/</span> Ophthalmology Billing</div>
