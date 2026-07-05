@@ -255,24 +255,24 @@ function ztog(btn){
   </div>
 </section>
 <section class="py-16 px-6 bg-slate-50">
-  <div class="max-w-4xl mx-auto space-y-5"><article class="bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
+  <div class="max-w-4xl mx-auto space-y-5"><article class="za bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
   <div class="text-[11px] font-bold text-brand-teal uppercase tracking-wider mb-2">June 2026</div>
-  <h3 class="text-[17px] font-bold text-brand-navy mb-3">ZettaRCM Named Top Medical Billing Company in New York for 2026</h3>
+  <h3 class="za text-[17px] font-bold text-brand-navy mb-3">ZettaRCM Named Top Medical Billing Company in New York for 2026</h3>
   <p class="text-[14px] text-slate-600 font-light leading-relaxed">ZettaRCM has been recognized by Healthcare Financial Management Association as a top-rated revenue cycle management company for the second consecutive year.</p>
   <a href="/contact/" class="inline-flex items-center gap-1.5 text-brand-teal font-bold text-[12px] uppercase tracking-wider mt-4">Read Full Release <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
-</article><article class="bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
+</article><article class="za bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
   <div class="text-[11px] font-bold text-brand-teal uppercase tracking-wider mb-2">May 2026</div>
-  <h3 class="text-[17px] font-bold text-brand-navy mb-3">ZettaRCM Expands Mental Health Billing Division</h3>
+  <h3 class="za text-[17px] font-bold text-brand-navy mb-3">ZettaRCM Expands Mental Health Billing Division</h3>
   <p class="text-[14px] text-slate-600 font-light leading-relaxed">In response to growing demand from behavioral health providers, ZettaRCM has expanded its dedicated mental health billing team with five additional AAPC-certified coders.</p>
   <a href="/contact/" class="inline-flex items-center gap-1.5 text-brand-teal font-bold text-[12px] uppercase tracking-wider mt-4">Read Full Release <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
-</article><article class="bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
+</article><article class="za bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
   <div class="text-[11px] font-bold text-brand-teal uppercase tracking-wider mb-2">April 2026</div>
-  <h3 class="text-[17px] font-bold text-brand-navy mb-3">New Partnership with Leading EHR Platform</h3>
+  <h3 class="za text-[17px] font-bold text-brand-navy mb-3">New Partnership with Leading EHR Platform</h3>
   <p class="text-[14px] text-slate-600 font-light leading-relaxed">ZettaRCM announces seamless integration with a major EHR platform, enabling automated charge capture for over 200 client practices.</p>
   <a href="/contact/" class="inline-flex items-center gap-1.5 text-brand-teal font-bold text-[12px] uppercase tracking-wider mt-4">Read Full Release <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
-</article><article class="bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
+</article><article class="za bg-white border border-slate-200 p-7 hover:border-brand-teal hover:shadow-md transition-all">
   <div class="text-[11px] font-bold text-brand-teal uppercase tracking-wider mb-2">March 2026</div>
-  <h3 class="text-[17px] font-bold text-brand-navy mb-3">ZettaRCM Achieves 99.2% First-Pass Claim Rate Milestone</h3>
+  <h3 class="za text-[17px] font-bold text-brand-navy mb-3">ZettaRCM Achieves 99.2% First-Pass Claim Rate Milestone</h3>
   <p class="text-[14px] text-slate-600 font-light leading-relaxed">The company reports its highest-ever first-pass claim acceptance rate, significantly above the industry average of 85–90%.</p>
   <a href="/contact/" class="inline-flex items-center gap-1.5 text-brand-teal font-bold text-[12px] uppercase tracking-wider mt-4">Read Full Release <svg class="w-3 h-3 fill-current" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
 </article></div>
@@ -343,5 +343,64 @@ function ztog(btn){
     </div>
   </div>
 </footer>
+<style>
+/* Scroll-reveal base */
+.za{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease;}
+.za.zv{opacity:1;transform:none;}
+.za-left{opacity:0;transform:translateX(-32px);transition:opacity .65s ease,transform .65s ease;}
+.za-left.zv{opacity:1;transform:none;}
+.za-right{opacity:0;transform:translateX(32px);transition:opacity .65s ease,transform .65s ease;}
+.za-right.zv{opacity:1;transform:none;}
+.za-scale{opacity:0;transform:scale(.93);transition:opacity .55s ease,transform .55s ease;}
+.za-scale.zv{opacity:1;transform:scale(1);}
+/* Stagger delays */
+.zd1{transition-delay:.1s;}.zd2{transition-delay:.2s;}.zd3{transition-delay:.3s;}
+.zd4{transition-delay:.4s;}.zd5{transition-delay:.5s;}.zd6{transition-delay:.6s;}
+/* Stat counter pulse */
+@keyframes zpulse{0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
+.zstat-done{animation:zpulse .4s ease;}
+/* Hero headline word reveal */
+@keyframes zword{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+.zhero-word{display:inline-block;opacity:0;animation:zword .5s ease forwards;}
+</style>
+<script>
+(function(){
+  // Intersection observer for scroll reveals
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('zv');io.unobserve(e.target);}
+    });
+  },{threshold:0.12});
+  function observe(){
+    document.querySelectorAll('.za,.za-left,.za-right,.za-scale').forEach(function(el){io.observe(el);});
+  }
+  // Animated counter
+  function animCounter(el){
+    var target=parseInt(el.getAttribute('data-count')||el.innerText.replace(/\D/g,''));
+    var suffix=el.getAttribute('data-suffix')||'';
+    var prefix=el.getAttribute('data-prefix')||'';
+    var dur=1800,step=16,steps=dur/step,inc=target/steps,cur=0;
+    var t=setInterval(function(){
+      cur+=inc;if(cur>=target){cur=target;clearInterval(t);el.classList.add('zstat-done');}
+      el.innerText=prefix+Math.floor(cur).toLocaleString()+suffix;
+    },step);
+  }
+  var countDone=false;
+  var cio=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting&&!countDone){
+        countDone=true;
+        document.querySelectorAll('[data-count]').forEach(animCounter);
+      }
+    });
+  },{threshold:0.3});
+
+  document.addEventListener('DOMContentLoaded',function(){
+    observe();
+    var statsEl=document.querySelector('[data-count]');
+    if(statsEl){var p=statsEl.closest('section')||statsEl;cio.observe(p);}
+  });
+})();
+</script>
 </body>
 </html>

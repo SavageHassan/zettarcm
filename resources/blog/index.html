@@ -383,5 +383,64 @@ function ztog(btn){
     </div>
   </div>
 </footer>
+<style>
+/* Scroll-reveal base */
+.za{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease;}
+.za.zv{opacity:1;transform:none;}
+.za-left{opacity:0;transform:translateX(-32px);transition:opacity .65s ease,transform .65s ease;}
+.za-left.zv{opacity:1;transform:none;}
+.za-right{opacity:0;transform:translateX(32px);transition:opacity .65s ease,transform .65s ease;}
+.za-right.zv{opacity:1;transform:none;}
+.za-scale{opacity:0;transform:scale(.93);transition:opacity .55s ease,transform .55s ease;}
+.za-scale.zv{opacity:1;transform:scale(1);}
+/* Stagger delays */
+.zd1{transition-delay:.1s;}.zd2{transition-delay:.2s;}.zd3{transition-delay:.3s;}
+.zd4{transition-delay:.4s;}.zd5{transition-delay:.5s;}.zd6{transition-delay:.6s;}
+/* Stat counter pulse */
+@keyframes zpulse{0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
+.zstat-done{animation:zpulse .4s ease;}
+/* Hero headline word reveal */
+@keyframes zword{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:none;}}
+.zhero-word{display:inline-block;opacity:0;animation:zword .5s ease forwards;}
+</style>
+<script>
+(function(){
+  // Intersection observer for scroll reveals
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('zv');io.unobserve(e.target);}
+    });
+  },{threshold:0.12});
+  function observe(){
+    document.querySelectorAll('.za,.za-left,.za-right,.za-scale').forEach(function(el){io.observe(el);});
+  }
+  // Animated counter
+  function animCounter(el){
+    var target=parseInt(el.getAttribute('data-count')||el.innerText.replace(/\D/g,''));
+    var suffix=el.getAttribute('data-suffix')||'';
+    var prefix=el.getAttribute('data-prefix')||'';
+    var dur=1800,step=16,steps=dur/step,inc=target/steps,cur=0;
+    var t=setInterval(function(){
+      cur+=inc;if(cur>=target){cur=target;clearInterval(t);el.classList.add('zstat-done');}
+      el.innerText=prefix+Math.floor(cur).toLocaleString()+suffix;
+    },step);
+  }
+  var countDone=false;
+  var cio=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting&&!countDone){
+        countDone=true;
+        document.querySelectorAll('[data-count]').forEach(animCounter);
+      }
+    });
+  },{threshold:0.3});
+
+  document.addEventListener('DOMContentLoaded',function(){
+    observe();
+    var statsEl=document.querySelector('[data-count]');
+    if(statsEl){var p=statsEl.closest('section')||statsEl;cio.observe(p);}
+  });
+})();
+</script>
 </body>
 </html>
