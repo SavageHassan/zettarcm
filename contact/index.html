@@ -264,7 +264,11 @@ function ztog(btn){
     <div class="lg:col-span-2 bg-white border border-slate-200 p-8">
       <h3 class="text-brand-navy font-bold text-[20px] mb-2">Send Us a Message</h3>
       <p class="text-slate-500 text-[13px] mb-7 font-light">A billing specialist will respond within 2 business hours.</p>
-      <form class="space-y-5" onsubmit="this.innerHTML='<div class=\'text-center py-10\'><svg class=\'w-14 h-14 fill-brand-teal mx-auto mb-3\' viewBox=\'0 0 24 24\'><path d=\'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\'/></svg><div class=\'text-brand-teal font-bold text-xl\'>Message Sent!</div><p class=\'text-slate-500 mt-2\'>We will contact you within 2 business hours.</p></div>';event.preventDefault()">
+      <form class="space-y-5" method="POST" action="https://formsubmit.co/info@zettarcm.com">
+<input type="hidden" name="_subject" value="New ZettaRCM Inquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://zettarcm.com/thank-you">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div><label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">Full Name *</label><input type="text" required placeholder="Dr. Jane Smith" class="w-full border border-slate-200 text-slate-700 text-[14px] px-4 py-3 outline-none focus:border-brand-teal transition-colors"></div>
           <div><label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">Practice Name *</label><input type="text" required placeholder="Your Practice" class="w-full border border-slate-200 text-slate-700 text-[14px] px-4 py-3 outline-none focus:border-brand-teal transition-colors"></div>

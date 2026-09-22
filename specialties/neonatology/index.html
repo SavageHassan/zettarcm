@@ -302,7 +302,11 @@ function ztog(btn){
         <div class="space-y-5">
           <div class="bg-brand-navy p-6">
             <h4 class="text-white font-bold text-[15px] mb-4">Get A Free Quote</h4>
-            <form class="space-y-3" onsubmit="event.preventDefault()">
+            <form class="space-y-3" method="POST" action="https://formsubmit.co/info@zettarcm.com">
+<input type="hidden" name="_subject" value="New ZettaRCM Inquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://zettarcm.com/thank-you">
               <input type="text" placeholder="Full Name *" class="w-full bg-white/10 border border-white/20 text-white text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal placeholder-slate-400">
               <input type="email" placeholder="Email Address *" class="w-full bg-white/10 border border-white/20 text-white text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal placeholder-slate-400">
               <input type="tel" placeholder="Phone Number *" class="w-full bg-white/10 border border-white/20 text-white text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal placeholder-slate-400">
