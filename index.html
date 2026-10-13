@@ -321,26 +321,26 @@ function ztog(btn){
               <div class="grid grid-cols-2 gap-3">
                 <div>
                   <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Full Name *</label>
-                  <input type="text" placeholder="Dr. Jane Smith" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                  <input name="full_name" type="text" placeholder="Dr. Jane Smith" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
                 </div>
                 <div>
                   <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Practice Name *</label>
-                  <input type="text" placeholder="Your Practice" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                  <input name="practice_name" type="text" placeholder="Your Practice" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
                 </div>
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <div>
                   <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Email Address *</label>
-                  <input type="email" placeholder="doctor@clinic.com" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                  <input name="email" type="email" placeholder="doctor@clinic.com" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
                 </div>
                 <div>
                   <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Phone Number *</label>
-                  <input type="tel" placeholder="(800) 000-0000" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
+                  <input name="phone" type="tel" placeholder="(800) 000-0000" class="w-full border border-slate-200 text-slate-700 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal transition-colors">
                 </div>
               </div>
               <div>
                 <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Service Needed *</label>
-                <select class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
+                <select name="service_needed" class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
                   <option>Medical Billing Services</option>
                   <option>Credentialing & Enrollment</option>
                   <option>Medical Coding Services</option>
@@ -353,7 +353,7 @@ function ztog(btn){
               <div class="grid grid-cols-2 gap-3">
                 <div>
                   <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Healthcare Type *</label>
-                  <select class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
+                  <select name="healthcare_type" class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
                     <option>Solo / Private Practice</option>
                     <option>Group Provider Network</option>
                     <option>Enterprise Hospital</option>
@@ -363,7 +363,7 @@ function ztog(btn){
                 </div>
                 <div>
                   <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">Best Time to Call</label>
-                  <select class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
+                  <select name="best_time_to_call" class="w-full border border-slate-200 text-slate-600 text-[13px] px-3 py-2.5 outline-none focus:border-brand-teal cursor-pointer">
                     <option>Morning (9AM–12PM)</option>
                     <option>Afternoon (12–5PM)</option>
                     <option>Evening (5–8PM)</option>
